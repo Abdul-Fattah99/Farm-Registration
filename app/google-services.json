@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "838451993648",
+    "firebase_url": "https://farmregistration.firebaseio.com",
+    "project_id": "farmregistration",
+    "storage_bucket": "farmregistration.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838451993648:android:d0c81ec20d76b5dcdfa1f5",
+        "android_client_info": {
+          "package_name": "com.agromall.farmregistration"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "838451993648-0m2facoiajrlq5eikjrvgobbo9tmshld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAamwvs7nHWnsPIWpdXYP00LwfRpJONf7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "838451993648-0m2facoiajrlq5eikjrvgobbo9tmshld.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
