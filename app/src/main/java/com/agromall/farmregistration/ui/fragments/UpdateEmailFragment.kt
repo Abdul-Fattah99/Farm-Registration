@@ -14,7 +14,6 @@ import com.google.firebase.auth.EmailAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import kotlinx.android.synthetic.main.fragment_update_email.*
-import net.simplifiedcoding.firebaseauthtutorial.ui.fragments.UpdateEmailFragmentDirections
 
 class UpdateEmailFragment : Fragment() {
 

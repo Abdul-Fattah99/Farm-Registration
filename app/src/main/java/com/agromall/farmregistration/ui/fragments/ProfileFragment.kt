@@ -20,7 +20,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.UserProfileChangeRequest
 import com.google.firebase.storage.FirebaseStorage
 import kotlinx.android.synthetic.main.fragment_profile.*
-import net.simplifiedcoding.firebaseauthtutorial.ui.fragments.ProfileFragmentDirections
 import java.io.ByteArrayOutputStream
 
 
