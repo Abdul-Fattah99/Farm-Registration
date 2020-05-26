@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentActivity
 import androidx.navigation.Navigation
 import com.agromall.farmregistration.R
 import com.agromall.farmregistration.utils.toast
@@ -14,8 +13,8 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthProvider
 import kotlinx.android.synthetic.main.fragment_verify_phone.*
-import net.simplifiedcoding.firebaseauthtutorial.ui.fragments.VerifyPhoneFragmentDirections
-import java.util.concurrent.TimeUnit
+//import net.simplifiedcoding.firebaseauthtutorial.ui.fragments.VerifyPhoneFragmentDirections
+//import java.util.concurrent.TimeUnit
 
 
 class VerifyPhoneFragment : Fragment() {
@@ -47,15 +46,15 @@ class VerifyPhoneFragment : Fragment() {
                 return@setOnClickListener
             }
 
-//            val phoneNumber = '+' + ccp.selectedCountryCode + phone
-//
+           // val phoneNumber = '+' + ccp.selectedCountryCode + phone
+
 //            PhoneAuthProvider.getInstance()
 //                .verifyPhoneNumber(
 //                    phoneNumber,
 //                    60,
 //                    TimeUnit.SECONDS,
 //                    requireActivity()
-////                    phoneAuthCallbacks
+//                    //phoneAuthCallbacks
 //                )
 
 
@@ -92,7 +91,7 @@ class VerifyPhoneFragment : Fragment() {
 //        }
 //
 //        override fun onCodeSent(verificationId: String?, token: PhoneAuthProvider.ForceResendingToken?) {
-//            super.onCodeSent(verificationId, token)
+//            super.onCodeSent(verificationId!!, token!!)
 //            this@VerifyPhoneFragment.verificationId = verificationId
 //        }
 //    }

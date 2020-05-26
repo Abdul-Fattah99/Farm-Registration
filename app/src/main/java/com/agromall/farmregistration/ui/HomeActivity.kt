@@ -59,7 +59,7 @@ class HomeActivity : AppCompatActivity() {
             }.create().show()
 
         }
-        return super.onOptionsItemSelected(item)
+        return super.onOptionsItemSelected(item!!)
     }
 
 }
