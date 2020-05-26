@@ -11,4 +11,8 @@
             android:title="Profile"
     />
 
+    <item
+        android:id="@+id/farmListFragment"
+        android:title="All Farms"
+        />
 </menu>

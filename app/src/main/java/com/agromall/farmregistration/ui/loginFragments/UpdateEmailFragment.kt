@@ -1,4 +1,4 @@
-package com.agromall.farmregistration.ui.fragments
+package com.agromall.farmregistration.ui.loginFragments
 
 
 import android.os.Bundle

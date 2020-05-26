@@ -1,4 +1,4 @@
-package com.agromall.farmregistration.ui.fragments
+package com.agromall.farmregistration.ui.loginFragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,12 +8,11 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import com.agromall.farmregistration.R
 import com.agromall.farmregistration.utils.toast
-import com.google.firebase.FirebaseException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthProvider
 import kotlinx.android.synthetic.main.fragment_verify_phone.*
-//import net.simplifiedcoding.firebaseauthtutorial.ui.fragments.VerifyPhoneFragmentDirections
+//import net.simplifiedcoding.firebaseauthtutorial.ui.loginFragments.VerifyPhoneFragmentDirections
 //import java.util.concurrent.TimeUnit
 
 
