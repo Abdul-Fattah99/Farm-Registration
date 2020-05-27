@@ -3,6 +3,10 @@
 
     <item
             android:id="@+id/action_logout"
-            android:title="Logout"
+            android:title="@string/logout"
     />
+
+    <item
+        android:id="@+id/farmListFragment"
+        android:title="@string/all_farmers" />
 </menu>

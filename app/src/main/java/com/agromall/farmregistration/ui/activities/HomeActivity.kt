@@ -1,10 +1,8 @@
-package com.agromall.farmregistration.ui
+package com.agromall.farmregistration.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.agromall.farmregistration.R
-
-
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
@@ -59,7 +57,10 @@ class HomeActivity : AppCompatActivity() {
             }.create().show()
 
         }
+
         return super.onOptionsItemSelected(item!!)
+
+
     }
 
 }

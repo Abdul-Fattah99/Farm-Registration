@@ -1,4 +1,4 @@
-package com.agromall.farmregistration.ui
+package com.agromall.farmregistration.ui.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

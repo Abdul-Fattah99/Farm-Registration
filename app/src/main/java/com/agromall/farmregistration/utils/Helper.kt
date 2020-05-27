@@ -4,8 +4,8 @@ package com.agromall.farmregistration.utils
 import android.content.Context
 import android.content.Intent
 import android.widget.Toast
-import com.agromall.farmregistration.ui.HomeActivity
-import com.agromall.farmregistration.ui.LoginActivity
+import com.agromall.farmregistration.ui.activities.HomeActivity
+import com.agromall.farmregistration.ui.activities.LoginActivity
 
 
 fun Context.toast(message: String) =

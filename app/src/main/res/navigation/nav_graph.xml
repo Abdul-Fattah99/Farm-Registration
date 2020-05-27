@@ -5,10 +5,10 @@
             app:startDestination="@id/homeFragment">
 
     <fragment android:id="@+id/homeFragment"
-              android:name="com.agromall.farmregistration.ui.fragments.HomeFragment"
+              android:name="com.agromall.farmregistration.ui.farmRegFragments.HomeFragment"
               android:label="Home" tools:layout="@layout/fragment_home"/>
     <fragment android:id="@+id/profileFragment"
-              android:name="com.agromall.farmregistration.ui.fragments.ProfileFragment"
+              android:name="com.agromall.farmregistration.ui.loginFragments.ProfileFragment"
               android:label="Profile"
               tools:layout="@layout/fragment_profile">
         <action android:id="@+id/actionVerifyPhone"
@@ -19,19 +19,39 @@
                 app:destination="@id/updatePasswordFragment"/>
     </fragment>
     <fragment android:id="@+id/verifyPhoneFragment"
-              android:name="com.agromall.farmregistration.ui.fragments.VerifyPhoneFragment"
+              android:name="com.agromall.farmregistration.ui.loginFragments.VerifyPhoneFragment"
               android:label="Verify Phone" tools:layout="@layout/fragment_verify_phone">
         <action android:id="@+id/actionPhoneVerified" app:destination="@id/profileFragment"/>
     </fragment>
     <fragment android:id="@+id/updateEmailFragment"
-              android:name="com.agromall.farmregistration.ui.fragments.UpdateEmailFragment"
+              android:name="com.agromall.farmregistration.ui.loginFragments.UpdateEmailFragment"
               android:label="Update Email" tools:layout="@layout/fragment_update_email">
         <action android:id="@+id/actionEmailUpdated" app:destination="@id/profileFragment"/>
     </fragment>
     <fragment android:id="@+id/updatePasswordFragment"
-              android:name="com.agromall.farmregistration.ui.fragments.UpdatePasswordFragment"
+              android:name="com.agromall.farmregistration.ui.loginFragments.UpdatePasswordFragment"
               android:label="Update Password" tools:layout="@layout/fragment_update_password">
         <action android:id="@+id/actionPasswordUpdated"
                 app:destination="@id/profileFragment"/>
     </fragment>
+    <dialog
+        android:id="@+id/addFarmInfoFragment"
+        android:name="com.agromall.farmregistration.ui.farmRegFragments.AddFarmInfoFragment"
+        android:label="AddFarmInfoFragment" >
+        <action
+            android:id="@+id/action_addFarmInfoFragment_to_farmListFragment"
+            app:destination="@id/farmListFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/farmListFragment"
+        android:name="com.agromall.farmregistration.ui.farmRegFragments.FarmListFragment"
+        android:label="FarmList">
+        <action
+            android:id="@+id/action_farmListFragment_to_addFarmInfoFragment"
+            app:destination="@id/addFarmInfoFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/editFarmInfoFragment"
+        android:name="com.agromall.farmregistration.ui.farmRegFragments.EditFarmInfoFragment"
+        android:label="EditFarmInfoFragment" />
 </navigation>
