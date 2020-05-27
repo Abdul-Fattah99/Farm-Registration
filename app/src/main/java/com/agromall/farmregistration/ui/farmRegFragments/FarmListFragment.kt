@@ -33,8 +33,10 @@ class FarmListFragment : Fragment(), RecyclerViewClickListener {
         adapter.listener = this
         recycler_view_farmers.adapter = adapter
 
+        viewModel.fetchFarmers()
+
         viewModel.fetchFilteredFarmers(6)
-//        viewModel.getRealtimeUpdates()
+        viewModel.getRealtimeUpdates()
 
         viewModel.farmers.observe(viewLifecycleOwner, Observer {
             adapter.setFarmers(it)
@@ -62,6 +64,9 @@ class FarmListFragment : Fragment(), RecyclerViewClickListener {
                         viewModel.deleteFarmer(farmer)
                     }
                 }.create().show()
+            }
+            R.id.recycler_layout -> {
+                FarmDetailsFragment(farmer).show(childFragmentManager, "")
             }
         }
     }

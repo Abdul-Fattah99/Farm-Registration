@@ -25,12 +25,15 @@ class FarmListAdapter : RecyclerView.Adapter<FarmListAdapter.FarmListViewModel>(
     @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: FarmListViewModel, position: Int) {
         holder.view.text_view_name.text = farmers[position].name
-        holder.view.text_view_city_votes.text =
-            "${farmers[position].city} | Votes : ${farmers[position].votes}"
+        holder.view.text_view_age_location.text =
+            "${farmers[position].farmName}   |   location : ${farmers[position].location}"
         holder.view.button_edit.setOnClickListener {
             listener?.onRecyclerViewItemClicked(it, farmers[position])
         }
         holder.view.button_delete.setOnClickListener {
+            listener?.onRecyclerViewItemClicked(it, farmers[position])
+        }
+        holder.view.recycler_layout.setOnClickListener {
             listener?.onRecyclerViewItemClicked(it, farmers[position])
         }
     }

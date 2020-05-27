@@ -79,9 +79,9 @@ class FarmListViewModel : ViewModel() {
                         .child("-M-3fFw3GbovXWguSjp8")
 
                 3 ->
-                    //#3 SELECT * FROM Farmers WHERE city = ?
+                    //#3 SELECT * FROM Farmers WHERE age = ?
                     FirebaseDatabase.getInstance().getReference(NODE_FARMERS)
-                        .orderByChild("city")
+                        .orderByChild("age")
                         .equalTo("Hyderabad")
 
                 4 ->
@@ -90,20 +90,20 @@ class FarmListViewModel : ViewModel() {
                         .limitToFirst(2)
 
                 5 ->
-                    //#5 SELECT * FROM Farmers WHERE votes < 500
+                    //#5 SELECT * FROM Farmers WHERE sex < 500
                     FirebaseDatabase.getInstance().getReference(NODE_FARMERS)
-                        .orderByChild("votes")
+                        .orderByChild("sex")
                         .endAt(500.toDouble())
 
                 6 ->
-                    //#6 SELECT * FROM Artists WHERE name LIKE "A%"
+                    //#6 SELECT * FROM Farmers WHERE name LIKE "A%"
                     FirebaseDatabase.getInstance().getReference(NODE_FARMERS)
                         .orderByChild("name")
                         .startAt("A")
                         .endAt("A\uf8ff")
 
                 7 ->
-                    //#7 SELECT * FROM Artists Where votes < 500 AND city = Bangalore
+                    //#7 SELECT * FROM Farmers Where sex < 500 AND age = Bangalore
                     FirebaseDatabase.getInstance().getReference(NODE_FARMERS)
                 else -> FirebaseDatabase.getInstance().getReference(NODE_FARMERS)
             }
