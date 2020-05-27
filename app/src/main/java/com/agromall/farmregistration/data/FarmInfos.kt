@@ -1,16 +1,21 @@
 package com.agromall.farmregistration.data
 
+import android.net.Uri
 import com.google.firebase.database.Exclude
-import kotlin.random.Random
 
-private val cities = listOf("Bangalore", "Mumbai", "Ranchi", "Kolkata", "Hyderabad", "Pune")
+
 
 data class Farmer(
     @get:Exclude
     var id: String? = null,
+    //var image: Uri,
     var name: String? = null,
-    var city: String? = cities.random(),
-    var votes: Int = Random.nextInt(50, 5000),
+    var dob: String? = null,
+    var phoneNumber: String? = null,
+    var farmName: String? = null,
+    var farmSize: String? = null,
+    var location: String? = null,
+
     @get:Exclude
     var isDeleted: Boolean = false
 ) {

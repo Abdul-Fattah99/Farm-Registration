@@ -49,9 +49,32 @@
         <action
             android:id="@+id/action_farmListFragment_to_addFarmInfoFragment"
             app:destination="@id/addFarmInfoFragment" />
+        <action
+            android:id="@+id/action_farmListFragment_to_farmDetailsFragment"
+            app:destination="@id/farmDetailsFragment" />
     </fragment>
     <dialog
         android:id="@+id/editFarmInfoFragment"
         android:name="com.agromall.farmregistration.ui.farmRegFragments.EditFarmInfoFragment"
         android:label="EditFarmInfoFragment" />
+    <dialog
+        android:id="@+id/farmDetailsFragment"
+        android:name="com.agromall.farmregistration.ui.farmRegFragments.FarmDetailsFragment"
+        android:label="fragment_farm_details"
+        tools:layout="@layout/fragment_farm_details" >
+        <action
+            android:id="@+id/action_farmDetailsFragment_to_farmListFragment"
+            app:destination="@id/farmListFragment" />
+        <action
+            android:id="@+id/action_farmDetailsFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.agromall.farmregistration.ui.farmRegFragments.MapsFragment"
+        android:label="MapsFragment" >
+        <action
+            android:id="@+id/action_mapsFragment_to_farmDetailsFragment"
+            app:destination="@id/farmDetailsFragment" />
+    </fragment>
 </navigation>
