@@ -11,8 +11,8 @@
         android:background="@drawable/ic_boy"
         android:layout_marginTop="16dp"
         android:layout_gravity="center"
-        android:layout_width="90dp"
-        android:layout_height="90dp"/>
+        android:layout_width="60dp"
+        android:layout_height="45dp"/>
 
 
 

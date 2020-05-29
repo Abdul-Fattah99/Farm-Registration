@@ -39,7 +39,7 @@ class FarmDetailsFragment(
         super.onActivityCreated(savedInstanceState)
 
         nav_to_map_view.setOnClickListener{
-            MapsFragment()
+            MapsFragment(farmer)
                 .show(childFragmentManager, "")
         }
 

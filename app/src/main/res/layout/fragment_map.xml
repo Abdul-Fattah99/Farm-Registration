@@ -4,8 +4,24 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/farm_location_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/farm_location_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/farm_location" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
     <com.google.android.gms.maps.MapView
         android:id="@+id/map_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
 </FrameLayout>
