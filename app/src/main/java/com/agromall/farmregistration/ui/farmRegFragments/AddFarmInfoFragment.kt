@@ -1,7 +1,9 @@
 package com.agromall.farmregistration.ui.farmRegFragments
 
 
+import android.app.DatePickerDialog
 import android.content.Intent
+import android.graphics.Typeface
 import android.os.Bundle
 import android.provider.MediaStore
 import android.view.LayoutInflater
@@ -14,6 +16,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.agromall.farmregistration.data.Farmer
 import kotlinx.android.synthetic.main.fragment_add_farm_info.*
+import java.util.*
 
 
 class AddFarmInfoFragment : DialogFragment() {
@@ -50,8 +53,6 @@ class AddFarmInfoFragment : DialogFragment() {
         farmer_image.setOnClickListener{
 
         }
-
-
         button_add.setOnClickListener {
             //val image = farmer_image.setImageBitmap()
             val name = edit_text_name.text.toString().trim()
@@ -77,7 +78,11 @@ class AddFarmInfoFragment : DialogFragment() {
 
             viewModel.addFarmer(farmer)
         }
+
+
     }
 
 
-}
+
+
+    }
